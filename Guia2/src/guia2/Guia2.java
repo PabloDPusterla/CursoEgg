@@ -42,7 +42,7 @@ public class Guia2 {
         
         
 // Ejercicio 3
-
+ 
 
         String Frase;
         
@@ -76,6 +76,7 @@ public class Guia2 {
         System.out.println("El triple es: "+ numero *3);
         System.out.println("La raiz cuadrada es: "+ numero * numero);
         System.out.println("La raiz cuadrada es: "+ raiz);
+        
         
     }
     
