@@ -29,30 +29,33 @@ public class EjExtra5 {
         Scanner leer = new Scanner(System.in);
         
         String tipo;
-        int costo;
-        costo = 1000;
+        double costo;
         //float porcentaje;
         
         System.out.println("ingrese su tipo de socio (A,B,C):");
-        tipo = leer.nextLine();
+        tipo = leer.nextLine().toUpperCase();
         
         switch(tipo){
             case "A":
-                System.out.println("Costo sin descuento: $"+costo);
+                System.out.println("Ingrese el costo de el tratamiento:");
+                costo = leer.nextDouble();
                 System.out.println("Costo con descuento: $"+costo /2);
                 break;
                 
             case "B":
-                System.out.println("Costo sin descuento: $"+costo);
-                //porcentaje = (costo*0,35);
-                System.out.println("Costo con descuento: $");
+                System.out.println("Ingrese el costo de el tratamiento:");
+                costo = leer.nextDouble();
+                costo = costo - (costo*0.35);
+                System.out.println("Costo con descuento: $" + costo);
                 break;
                 
             case "C":
-                System.out.println("Costo sin descuento: $"+costo);
-                System.out.println("Costo con descuento: $"+costo /2);
+                System.out.println("Ingrese el costo de el tratamiento:");
+                costo = leer.nextDouble();
+                System.out.println("Socio sin beneficios, total a pagar: $"+costo);
                 break;
-                
+            default:
+                System.out.println("Ingrese una opcion valida");
         }
         
     }
